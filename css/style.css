@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    text-align: center;
+    text-transform: uppercase;
+    background-color:  hsl(185, 41%, 84%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    font-size: 14px;
+    color: hsl(183, 100%, 15%);
+  }
+  
+  .box {
+    width: 800px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #fff;
+  }
+
+  h2 {
+    font-size: 20px;
+    color: hsl(185, 41%, 84%);
+  }
+  
+  .green-box {
+    background-color: hsl(186, 14%, 43%);
+    flex-basis: 48%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    color: white;
+  }
+  
+  .parson {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    text-align: left;
+  }
+
+  .parson p {
+    color: hsl(184, 14%, 56%);
+  }
+  
+  .num {
+    font-size: 28px;
+    color: hsl(172, 67%, 45%);
+    text-align: left;
+    min-width: 100px;
+    height: 32px;
+  }
+  
+  .white-box {
+    flex-basis: 48%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: left;
+    background-color: #fff;
+  }
+  
+  .btn-contanir {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+  }
+  
+  .btn {
+    padding: 15px 15px;
+    background-color: hsl(184, 14%, 56%);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+  }
+
+  .input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    padding: 0 20px;
+  }
+  
+  .reast {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: hsl(172, 67%, 45%);
+  }
+  
+  input {
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 5px;
+    width: 90%;
+    direction: rtl;
+    font-size: 20px;
+    color: hsl(184, 14%, 56%);
+  }
+
+  input[placeholder] {
+    color: hsl(184, 14%, 56%);
+ }
+
+ button {
+   transition: 0.3s;
+ }
+
+ button:hover {
+   background-color: hsl(185, 41%, 84%);
+   color: hsl(183, 100%, 15%);
+ }
+
+ .btn-custom {
+   background-color: white;
+   color: hsl(183, 100%, 15%);
+ }
+  
+  @media (max-width: 767px) {
+    .box {
+      flex-direction: column;
+      height: 80vh;
+      width: 90%;
+    }
+  }
+  

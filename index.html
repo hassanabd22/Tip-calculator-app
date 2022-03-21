@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="description" content="the Tip calctlator ">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body> 
+    <img src="./images/logo.svg" alt="logo">
+    <div class="box">
+      <form class="white-box">
+        <div class="bill">
+          <label for="bill">Bill</label>
+          <div class="input">
+            <img src="./images/icon-dollar.svg" alt="">
+            <input class="num-bill" type="text" name="bill" id="bill" placeholder="0"/>
+          </div>
+          
+        </div>
+        <div class="tip-slect">
+          <p>Select Tip %</p>
+          <div class="btn-contanir">
+            <button data-num = '0.05' class="btn">5%</button>
+            <button data-num = '0.10' class="btn">10%</button>
+            <button data-num = '0.15' class="btn">15%</button>
+            <button data-num = '0.25' class="btn">25%</button>
+            <button data-num = '0.50' class="btn">50%</button>
+            <button class="btn btn-custom">Custom</button>
+          </div>
+        </div>
+        <div class="number-peple">
+          <label for="People">Number of People</label>
+          <div class="input">
+            <img src="./images/icon-person.svg" alt="person">
+            <input class="people" type="text" name="People" id="People" placeholder="0"/>
+          </div>
+          
+        </div>
+      </form>
+      <div class="green-box">
+        <div class="parson">
+          <div class="tip">
+            <h2>Tip Amount</h2>
+            <p>/ person</p>
+          </div>
+          <div class="num numAmount">$0.00</div>
+        </div>
+        <div class="parson">
+          <div class="totle">
+            <h3>Total</h3>
+            <p>/ person</p>
+          </div>
+          <div class="num numTotle">$0.00</div>
+        </div>
+        <button class="reast btn">Reset</button>
+      </div>
+    </div>
+    <script src="./js/index.js"></script> 
+</body>
+</html>
